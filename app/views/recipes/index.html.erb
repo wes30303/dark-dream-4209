@@ -1,0 +1,9 @@
+<h1> This is all the Student </h1>
+<%= @recipes.all.each_with_index do |student, index| %>
+  <div id="index-<%= index %>">
+  <p> name: <%= student.name %> </p>
+  <p> complexity: <%= student.complexity %> </p>
+  <p> genre: <%= student.genre %> </p>
+  </div>
+
+<% end %>
